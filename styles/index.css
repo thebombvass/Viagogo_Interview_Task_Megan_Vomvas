@@ -1,0 +1,40 @@
+body {
+    color: rgb(35, 35, 36);
+    /* font: ; */
+}
+
+h1 {
+    font-size: 28px;
+    border-right: 4px solid #FE4A49;
+    border-left: 4px solid #2AB7CA;
+    border-top: 4px solid #2AB7CA;
+    border-bottom: 4px solid #FE4A49;
+}
+
+img {
+    max-width: 100%;
+    z-index: 0;
+}
+
+h2 {
+    z-index: 1;
+    position: relative;
+    top: 4em;
+    font-size: 3em;
+    left: 10%;
+    font-style: italic;
+}
+
+#menu {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em;
+    width: 70%;
+    border-bottom: 2px solid #BFC0C0;
+}
+
+footer {
+    text-align: right;
+    background-color: #435058;
+    color: white;
+}
