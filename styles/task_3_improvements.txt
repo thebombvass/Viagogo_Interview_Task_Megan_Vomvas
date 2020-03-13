@@ -1,0 +1,12 @@
+Q) Tell us about the possible reasons that the filter your implemented in part 2 did not help the customer experience.
+
+A) They may want to be able to search by state or by surrounding cities in an x-mile radius using their current location. 
+Perhaps picking just one city is too restrictive. Additionally they may want to filter by other factors such as date and price.
+
+
+Q) What could you change to improve the filter experience, and why do you think it would be better for the customer?
+
+A) I would expand on the filter to allow them to filter by maximum price. I would also implement the abilty to filter for venues that are with in a 10, 20 or 50 mile radius from you.
+
+I believe that filtering by radius to you would force me to manipulate the Viagogo API to include more informaton about the exact address of the venues, I am not going to implement that one
+A price filter is also pretty tricky since we are only given minimum price, theres no way to know about the price of the other tickets.

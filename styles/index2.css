@@ -67,3 +67,9 @@ button {
     font-size: 0.8em;
     font-weight: bold;
 }
+
+#CityDropDownBtn {
+    position: relative;
+    bottom: 5px;
+    font-size: 16px;
+}

@@ -25,7 +25,9 @@ $(document).ready(function() {
 
     data.forEach(elem => {
       //ternary conditional is used to add promotional messages if applicable. This avoids having multiple if statements with repetitive code
-      listFiller += `<li class="list-group-item hidden m-3 eventItem ${elem.VenueCity}"><div class="row">
+      listFiller += `<li class="list-group-item hidden m-3 eventItem ${
+        elem.VenueCity
+      }"><div class="row">
                   <div class="col-3"><h6>${elem.Date}</h6><p>${elem.Day} | ${
         elem.Time
       }</p></div>
@@ -66,28 +68,27 @@ $(document).ready(function() {
 
   //function to fill the dropdown of Cities in City Filter
   function createCityDropDown(data) {
-      let results = `<a class="dropdown-item cityChosen" id="All">All</a>`;
-      data.forEach(elem => {
-          results += `<a class="dropdown-item cityChosen" id=${elem.VenueCity}>${elem.VenueCity}</a>`
-      })
-      return results
+    let results = `<a class="dropdown-item cityChosen" id="All">All</a>`;
+    data.forEach(elem => {
+      results += `<a class="dropdown-item cityChosen" id=${elem.VenueCity}>${elem.VenueCity}</a>`;
+    });
+    return results;
   }
 
   //function to filter results by city
   function FilterResults(city) {
-    if(city == "All") {
-        $('.eventItem').show()
+    if (city == "All") {
+      $(".eventItem").show();
     } else {
-        $('.eventItem').hide()
-        $(`.${city}`).show()
+      $(".eventItem").hide();
+      $(`.${city}`).show();
     }
   }
 
   //** Function Calls */
 
-
   //filling the cities dropdown filter
-  $("#cityDropDown").html(createCityDropDown(eventData))
+  $("#cityDropDown").html(createCityDropDown(eventData));
 
   // Getting current converstion rate for pounds to dollars using https://exchangeratesapi.io/ API from European Central Bank.
   $.get("https://api.exchangeratesapi.io/latest?base=GBP", function(data) {
@@ -105,12 +106,10 @@ $(document).ready(function() {
 
     //adding an event listener to each of our dropdown items that will trigger the function to filter our results by location
     $(".cityChosen").click(function() {
-       city = $(this).attr('id')
-       FilterResults(city)
-    })
+      city = $(this).attr("id");
+      FilterResults(city);
+    });
   });
-
-  
 
   //jQuery doc end - don't write below this
 });
