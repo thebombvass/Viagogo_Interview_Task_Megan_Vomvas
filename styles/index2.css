@@ -1,4 +1,3 @@
-/* tag level selectors */
 body {
     color: rgb(35, 35, 36);
     /* font: ; */
@@ -40,12 +39,10 @@ button {
     float: right;
 }
 
-/* Class level Selectors */
 .eventItem {
     border-left: 3px solid 
 }
 
-/* Id level Selectors */
 #menu {
     margin-left: 2em;
     margin-right: 2em;
