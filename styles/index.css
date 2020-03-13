@@ -38,3 +38,32 @@ footer {
     background-color: #435058;
     color: white;
 }
+
+.eventItem {
+    border-left: 3px solid 
+}
+
+#navBar {
+    float: right;
+    width: 70%;
+}
+
+#lowStockMessage {
+    color: #FE4A49;
+    font-size: 0.8em;
+    float: right;
+}
+
+#alertMessages {
+    color: #2AB7CA;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+u {
+    cursor: pointer;
+}
+
+button {
+    float: right;
+}
